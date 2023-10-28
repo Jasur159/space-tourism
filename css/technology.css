@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Bellefair&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+header {
+  background-image: url(../assets/technology/background-technology-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0 100px;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  position: relative;
+  width: 100%;
+  padding: 24px 0 24px 55px;
+  align-items: center;
+  z-index: 100;
+  padding: 39px 0 38px;
+}
+nav::after {
+  content: "";
+  width: 59%;
+  height: 96px;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.1);
+  top: 15px;
+  right: 0;
+  backdrop-filter: blur(50px);
+  position: absolute;
+}
+.navlist {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  position: relative;
+}
+.navlist::before {
+  content: "";
+  width: 450px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  opacity: 0.3;
+  left: -530px;
+  top: 50%;
+}
+.navlist .link:nth-child(4) a {
+  border-bottom: 3px solid white;
+}
+.logo {
+  transform: translateX(-80px);
+}
+#check {
+  display: none;
+}
+.icons {
+  display: none;
+}
+.nav_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link span {
+  color: white;
+  font-family: Barlow Condensed;
+  font-weight: 700;
+  letter-spacing: 2.7px;
+  margin-right: 11px;
+}
+.link a {
+  color: white;
+  font-family: Barlow Condensed;
+  letter-spacing: 2.7px;
+  padding-bottom: 34px;
+  position: relative;
+}
+.link a:hover {
+  border-bottom: 3px solid white;
+}
+.header_content > p {
+  position: absolute;
+  top: 76px;
+  left: 0;
+  color: white;
+  font-size: 28px;
+  font-family: Barlow Condensed;
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
+}
+.header_content > p span {
+  color: white;
+  opacity: 0.25;
+  font-size: 28px;
+  font-family: Barlow Condensed;
+  font-weight: 700;
+  letter-spacing: 4.72px;
+  margin-right: 28px;
+}
+.header_content {
+  padding-top: 135px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header_text {
+  display: flex;
+  gap: 80px;
+}
+.header_secrion_links {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.header_secrion_links a {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+  font-family: Bellefair;
+  letter-spacing: 2px;
+}
+.header_secrion_links a:nth-child(1) {
+  background-color: white;
+  color: black;
+}
+.header_secrion_links a:hover {
+  background-color: white;
+  color: black;
+}
+.header_content p:nth-child(1) {
+  color: #d0d6f9;
+  font-family: Barlow Condensed;
+  letter-spacing: 2.7px;
+}
+.header_text_content h1 {
+  color: white;
+  margin: 11px 0 17px;
+  font-size: 50px;
+  font-family: Bellefair;
+  font-weight: 400;
+}
+.header_text_content h1 + p {
+  max-width: 445px;
+  color: #d0d6f9;
+  font-size: 18px;
+  font-family: Barlow;
+  line-height: 32px;
+}
+.header_img {
+  transform: translateX(129px);
+}
+/* SPACEPORT */
+.header_links_2 a:nth-child(1) {
+  background-color: transparent;
+  color: white;
+}
+.header_links_2 a:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+.header_links_2 a:nth-child(2) {
+  background-color: white;
+  color: black;
+}
+/* SPACE CAPSULE */
+.header_links_3 a:nth-child(1) {
+  background-color: transparent;
+  color: white;
+}
+.header_links_3 a:nth-child(2) {
+  background-color: transparent;
+  color: white;
+}
+.header_links_3 a:nth-child(1):hover {
+  background-color: white;
+  color: black;
+}
+.header_links_3 a:nth-child(2):hover {
+  background-color: white;
+  color: black;
+}
+.header_links_3 a:nth-child(3) {
+  background-color: white;
+  color: black;
+}
