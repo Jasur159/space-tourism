@@ -60,13 +60,13 @@ ul {
   left: -530px;
   top: 50%;
 }
-.navlist .link:nth-child(1) a:hover{
+.navlist .link:nth-child(1) a:hover {
   border-bottom: 3px solid white;
 }
-.navlist .link:nth-child(2) a{
+.navlist .link:nth-child(2) a {
   border-bottom: 3px solid white;
 }
-.navlist .link:nth-child(1){
+.navlist .link:nth-child(1) {
   border: none;
 }
 .logo {
@@ -263,7 +263,7 @@ ul {
   }
   .nav_content {
     align-items: center;
-    padding: 24px 0;
+    padding: 24px 0 0;
   }
   nav::after {
     top: 0;
@@ -347,7 +347,7 @@ ul {
   }
 }
 @media screen and (max-width: 500px) {
-  header{
+  header {
     background-image: url(../assets/destination/background-destination-mobile.jpg);
   }
   .header_content ul {

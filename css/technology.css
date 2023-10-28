@@ -8,6 +8,7 @@
 img {
   max-width: 100%;
 }
+
 .container {
   max-width: 1150px;
   margin: 0 auto;
@@ -90,17 +91,17 @@ nav::after {
 .link a:hover {
   border-bottom: 3px solid white;
 }
-.header_content > p {
+.header_img + p {
   position: absolute;
   top: 76px;
-  left: 0;
+  left: 20px;
   color: white;
   font-size: 28px;
   font-family: Barlow Condensed;
   text-transform: uppercase;
   letter-spacing: 4.72px;
 }
-.header_content > p span {
+.header_img + p span {
   color: white;
   opacity: 0.25;
   font-size: 28px;
@@ -165,8 +166,9 @@ nav::after {
   font-family: Barlow;
   line-height: 32px;
 }
-.header_img {
-  transform: translateX(129px);
+.header_img .vehicle_1 {
+  position: relative;
+  right: 0;
 }
 /* SPACEPORT */
 .header_links_2 a:nth-child(1) {
@@ -201,4 +203,223 @@ nav::after {
 .header_links_3 a:nth-child(3) {
   background-color: white;
   color: black;
+}
+.header_img img:nth-child(2) {
+  display: none;
+}
+@media screen and (max-width: 1371px) {
+  .header_img {
+    right: 0;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .logo {
+    transform: translateX(0);
+  }
+  .navlist::before {
+    display: none;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .header_img img:nth-child(1) {
+    display: none;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .link span {
+    display: none;
+  }
+  .header_content {
+    flex-direction: column-reverse;
+  }
+  .header_img img:last-child {
+    margin-bottom: 56px;
+  }
+
+  .header_img img:nth-child(2) {
+    display: block;
+    max-width: 100%;
+  }
+  .header_secrion_links {
+    flex-direction: row;
+  }
+  .header_text {
+    flex-direction: column;
+    align-items: center;
+    gap: 44px;
+  }
+  .header_text_content {
+    text-align: center;
+  }
+  .header_text_content h1 + p {
+    max-width: 458px;
+  }
+}
+@media screen and (max-width: 900px) {
+  header {
+    background-image: url(../assets/technology/background-technology-tablet.jpg);
+    background-position: center;
+    padding: 0 0;
+  }
+
+  .header_content {
+    padding: 124px 0 97px;
+  }
+  .nav_content {
+    align-items: center;
+    padding: 24px 0 0;
+  }
+  nav::after {
+    top: 0;
+  }
+  .navlist {
+    gap: 37px;
+  }
+  .link a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+  nav {
+    padding: 0 0;
+  }
+  .header_img + p {
+    top: 40px;
+    font-size: 20px;
+    letter-spacing: 3.38px;
+    left: 5%;
+  }
+  .header_img + p span {
+    font-size: 20px;
+    margin-right: 16px;
+    letter-spacing: 3.38px;
+  }
+  .header_secrion_links {
+    gap: 16px;
+  }
+  .header_secrion_links a {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    letter-spacing: 1.5px;
+  }
+  .header_text_content + p {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .header_text_content h1 {
+    font-size: 40px;
+    margin: 16px 0;
+  }
+  .header_text_content h1 + p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+  nav::after {
+    display: none;
+  }
+  .icons {
+    display: block;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    z-index: 101;
+  }
+  #close_bar {
+    display: none;
+  }
+  #check:checked ~ .icons #menu_bar {
+    display: none;
+  }
+  #check:checked ~ .icons #close_bar {
+    display: inline-flex;
+  }
+  nav {
+    position: relative;
+  }
+  .navlist {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.55px);
+    width: 0;
+    gap: 32px;
+    z-index: 100;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  #check:checked ~ .navlist {
+    width: 254px;
+  }
+  .link span {
+    display: inline-block;
+    margin-right: 11px;
+  }
+  .link:nth-child(1) {
+    margin-top: 118px;
+  }
+  .link {
+    margin-left: 32px;
+    word-break: keep-all;
+    width: 222px;
+  }
+  .link a {
+    font-size: 16px;
+    width: 222px;
+    padding-bottom: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header{
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+  }
+  .header_content {
+    padding: 85px 0 56px;
+  }
+  .header_img + p {
+    position: relative;
+    top: -32px;
+    left: 0;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .header_img + p span {
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .header_img img:last-child {
+    margin-bottom: 32px;
+  }
+  .header_secrion_links a {
+    width: 40px;
+    height: 40px;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  .header_text {
+    gap: 26px;
+  }
+  .header_text_content + p {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+  .header_text_content h1 {
+    font-size: 24px;
+    margin-top: 9px;
+  }
+  .header_text_content h1 + p {
+    font-size: 15px;
+    line-height: 25px;
+  }
 }

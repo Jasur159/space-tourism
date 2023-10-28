@@ -254,7 +254,9 @@ nav::after {
   .header_content {
     flex-direction: column;
     padding: 124px 0 0;
-    gap: 40px;
+  }
+  .header_img img{
+    margin-bottom: 40px;
   }
   .header_img + p {
     font-size: 20px;
@@ -323,7 +325,7 @@ nav::after {
   }
   .nav_content {
     align-items: center;
-    padding: 24px 0;
+    padding: 24px 0 0;
   }
   nav::after {
     top: 0;
@@ -414,16 +416,16 @@ nav::after {
     padding: 85px 0 104px;
   }
   .header_img {
-    max-width: 200px;
+    max-width: 220px;
   }
-  .header_content > p {
-    top: 34px;
+  .header_img + p {
+    top: -34px;
     font-size: 16px;
     letter-spacing: 2.7px;
-    top: -34px;
+    
     position: relative;
   }
-  .header_content > p span {
+  .header_img + p span {
     font-size: 16px;
     margin-right: 16px;
     letter-spacing: 2.7px;
