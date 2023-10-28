@@ -166,7 +166,7 @@ nav::after {
   font-family: Barlow;
   line-height: 32px;
 }
-.header_img .vehicle_1 {
+.header_img .img:nth-child(1) {
   position: relative;
   right: 0;
 }
@@ -206,6 +206,9 @@ nav::after {
 }
 .header_img img:nth-child(2) {
   display: none;
+}
+.header_img + p{
+  left: 13%;
 }
 @media screen and (max-width: 1371px) {
   .header_img {
@@ -288,6 +291,7 @@ nav::after {
     font-size: 20px;
     letter-spacing: 3.38px;
     left: 5%;
+    
   }
   .header_img + p span {
     font-size: 20px;
