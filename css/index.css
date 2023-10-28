@@ -12,7 +12,7 @@ header {
   background-image: url(../assets/home/background-home-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 40px 0 110px;
+  padding: 40px 0 100px;
 }
 a {
   text-decoration: none;
@@ -31,7 +31,7 @@ nav::after {
   width: 59%;
   height: 96px;
   z-index: -1;
-  background-color: rgba(255, 255, 255, 0.01);
+  background-color: rgba(255, 255, 255, 0.05);
   top: 15px;
   right: 0;
   backdrop-filter: blur(50px);
