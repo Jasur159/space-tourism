@@ -13,6 +13,10 @@ img {
   max-width: 1150px;
   margin: 0 auto;
 }
+.main_container{
+  max-width: 1650px;
+  margin: 0 auto;
+}
 header {
   background-image: url(../assets/technology/background-technology-desktop.jpg);
   background-repeat: no-repeat;
