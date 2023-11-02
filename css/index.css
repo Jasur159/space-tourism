@@ -223,6 +223,7 @@ nav::after {
 @media screen and (max-width: 700px) {
   header{
     background-image: url(../assets/home/background-home-mobile.jpg);
+    padding-bottom: 180px;
   }
   .logo img {
     width: 40px;

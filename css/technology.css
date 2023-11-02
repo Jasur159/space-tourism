@@ -390,6 +390,7 @@ nav::after {
 @media screen and (max-width: 500px) {
   header{
     background-image: url(../assets/technology/background-technology-mobile.jpg);
+    padding-bottom: 180px;
   }
   .header_content {
     padding: 85px 0 56px;
